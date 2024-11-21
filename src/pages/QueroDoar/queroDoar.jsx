@@ -7,17 +7,18 @@ export default function QueroDoar(){
             <section className={s.explicativo}>
             <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
             </section>
-            <section className={s.titleForms}>
+            <section className={s.boxForms}>
+                <div className={s.forms}>
                 <img src={frame} alt="" />
                 <h3>Informações do Livro
                 </h3>
+                </div>
                 <form className={s.formulario}>
-                <input type='text' name='' id='' placeholder='Titulo' />
-                <input type='text' name='' id='' placeholder='Categoria' />
-                <input type='text' name='' id='' placeholder='Autor' />
-                <input type='text' name='' id='' placeholder='Link da imagem' />
-                <button>Doar</button>
-
+                <input className={s.entrada} type='text' name='' id='' placeholder='Titulo' />
+                <input className={s.entrada} type='text' name='' id='' placeholder='Categoria' />
+                <input className={s.entrada} type='text' name='' id='' placeholder='Autor' />
+                <input className={s.entrada} type='text' name='' id='' placeholder='Link da imagem' />
+                <input className={s.button} type='submit' value='Doar' />
                 </form>
             </section>
         </section>

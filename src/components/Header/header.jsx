@@ -17,9 +17,9 @@ export default function Header (){
             </section>
             <nav>
                 <ul>
-                    <li className={s.link}><Link to="/">Inicio</Link></li>
-                    <li className={s.link}><Link to="/doados">Doados</Link></li>
-                    <li className={s.link}><Link to="/queroDoar">QueroDoar</Link></li>
+                    <li className={s.links}><Link to="/">Inicio</Link></li>
+                    <li className={s.links}><Link to="/doados">Livros Doados</Link></li>
+                    <li className={s.links}><Link to="/queroDoar">Quero Doar</Link></li>
                 </ul>
             </nav>
             <section className={s.barraBusca}>
