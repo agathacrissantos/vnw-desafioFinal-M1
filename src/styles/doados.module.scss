@@ -1,0 +1,41 @@
+.livrosDoados{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    height: 7vh;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    margin-top: 30px;
+    article{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 3px solid #005695;
+        width: 17vw;
+        height: 35.7vh;
+        top: 206px;
+        left: 128px;
+        border-radius: 20px;
+        border: 3px 0px 0px 0px;
+
+}
+img{
+    width: 14vw;
+    height: 24vh;
+}
+}
