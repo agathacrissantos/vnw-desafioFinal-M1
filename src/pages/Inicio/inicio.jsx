@@ -7,11 +7,9 @@ import s from '../../styles/inicio.module.scss'
 
 export default function Inicio(){
     return(
-        <>
-        <section>
-            <div className={s.fundoInicio}>
+        <main>
+        <section className={s.fundoInicio}>
         <p>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</p>
-        </div>
         </section>
         <section className={s.container}>
         <section className={s.firstBox}>
@@ -39,6 +37,6 @@ export default function Inicio(){
             </article>
         </section>
         </section>
-        </>
+        </main>
     )
 }

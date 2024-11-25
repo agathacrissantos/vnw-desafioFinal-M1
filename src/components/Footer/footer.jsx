@@ -10,15 +10,27 @@ export default function Footer (){
     return(
         <footer>
             <section className={s.contato}>
-            <p>4002-8922</p>
-            <nav>
-                <figure className={s.redesSociais}>
+            <h3>4002-8922</h3>
+            <nav className={s.redesSociais}>
+                    <a href='https://pt-br.facebook.com/' target='_blank' >
                     <img src={facebook} alt='Icone do Facebook' />
+                    </a>
+
+                    <a href='https://x.com/login-to/' target='_blank' >
                     <img src={twiter} alt='Icone do Twiter' />
+                    </a>
+
+                    <a href='https://www.youtube.com/' target='_blank' >
                     <img src={youtube} alt='Icone do Youtube' />
+                    </a>
+
+                    <a href='https://br.linkedin.com/' target='_blank' >
                     <img src={linkedin} alt='Icone do Linkedin' />
+                    </a>
+
+                    <a href='https://www.instagram.com/?hl=pt-br' target='_blank' >
                     <img src={instagram} alt='Icone do Instagram' />
-                </figure>
+                    </a>
             </nav>
             </section>
             <section className={s.rodape}>

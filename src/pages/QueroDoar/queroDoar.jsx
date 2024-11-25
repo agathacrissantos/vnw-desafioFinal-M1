@@ -3,7 +3,7 @@ import s from '../../styles/queroDoar.module.scss'
 
 export default function QueroDoar(){
     return(
-        <section>
+        <main>
             <section className={s.explicativo}>
             <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
             </section>
@@ -21,6 +21,6 @@ export default function QueroDoar(){
                 <input className={s.button} type='submit' value='Doar' />
                 </form>
             </section>
-        </section>
+        </main>
     )
 }
