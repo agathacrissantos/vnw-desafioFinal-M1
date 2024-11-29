@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     padding-left: 20vh;
+    @media(min-width:201px) and (max-width: 600px){
+        width: 100%;
+    }
     p{
         color: white;
         width: 20vw;

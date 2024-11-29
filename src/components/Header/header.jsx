@@ -6,7 +6,6 @@ import logo from '../../assets/images/logo.png'
 import search from '../../assets/images/search.png'
 import s from '../../styles/header.module.scss'
 
-
 export default function Header (){
     return(
         <BrowserRouter>
