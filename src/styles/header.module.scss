@@ -6,10 +6,6 @@ header{
     align-items: center;
     justify-content: space-around;
     color: white;
-    @media(min-width:201px) and (max-width: 600px){
-      flex-direction: column;
-      height: 22vh;
-    }
     section{
         display: flex;
         align-items: center;
@@ -19,9 +15,6 @@ header{
         font-size: 22px;
         font-weight: 700;
         line-height: 36.31px;
-        @media (max-width: 700px) {
-          width: 50vw;
-        }
         }
 
     ul{
@@ -34,9 +27,6 @@ header{
         font-weight: 400;
         line-height: 24.2px;
         text-align: center;
-        @media(min-width:201px) and (max-width: 600px){         
-           width: 70vw;
-        }
         a{
         color: #ffffff;
         
@@ -53,9 +43,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @media(min-width:201px) and (max-width: 600px){
-        display: none;
-    }
   
     input {
       background-color: transparent;
