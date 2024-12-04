@@ -10,11 +10,11 @@ export default function Header (){
     return(
         <BrowserRouter>
         <header>
-            <section>
+            <section className={s.boxLogo}>
                 <img src={logo} alt="Imagem de um livro" />
             <h1>Livros Vai na Web</h1>
             </section>
-            <nav>
+            <nav className={s.menu}>
                 <ul>
                     <li className={s.links}><Link to="/">Inicio</Link></li>
                     <li className={s.links}><Link to="/doados">Livros Doados</Link></li>

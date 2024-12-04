@@ -10,7 +10,9 @@ export default function Footer (){
     return(
         <footer>
             <section className={s.contato}>
+                <div>
             <h3>4002-8922</h3>
+            </div>
             <nav className={s.redesSociais}>
                     <a href='https://pt-br.facebook.com/' target='_blank' >
                     <img src={facebook} alt='Icone do Facebook' />

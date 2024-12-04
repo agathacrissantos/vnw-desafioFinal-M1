@@ -42,13 +42,10 @@
     border: 2px solid #005695;
     width: 22vw;
     height: 5.6vh;
-    top: 400px;
-    left: 558px;
-    gap: 0px;
     border-radius: 15px;
-    border: 2px 0px 0px 0px;
     opacity: 0px;
     outline: none;
+    padding-left: 20px;
 
     &::placeholder{
         font-family: Inter;
@@ -57,8 +54,6 @@
         line-height: 16.94px;
         text-align: left;
         color: #000000;
-        width: 8vw;
-        opacity: 0px;
     }
 }
 
@@ -73,3 +68,4 @@
     background-color: #005695;
     color: white;
 }
+

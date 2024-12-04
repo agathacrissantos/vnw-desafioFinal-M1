@@ -1,12 +1,13 @@
 header{
-    width: 100%;
     height: 19.2vh;
     background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
-    section{
+}
+
+    .boxLogo{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -16,12 +17,12 @@ header{
         font-weight: 700;
         line-height: 36.31px;
         }
-
+        .menu{
+          width: 35vw;
     ul{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        width: 30vw;
+        justify-content: space-between;
         font-family: 'Inter', sans-serif;
         font-size: 20px;
         font-weight: 400;
@@ -29,16 +30,15 @@ header{
         text-align: center;
         a{
         color: #ffffff;
-        
+      }
       }
     }
-}
 
 .barraBusca {
     border: solid #fff;
     border-radius: 20px;
-    margin-right: 1%;
-    width: 20%;
+    margin-right: 20px;
+    width: 19vw;
     height: 6vh;
     display: flex;
     justify-content: space-around;
@@ -52,10 +52,10 @@ header{
       border: none;
       outline: none;
       color: #fff;
-  
+      font-size: 20px;
+
       &::placeholder {
         color: #fff;
-        font-size: 20px;
       }
     }
   
@@ -65,3 +65,78 @@ header{
     }
   }
   
+
+  @media(max-width: 1012px) {
+    header{
+      justify-content: space-around;
+    }
+  .boxLogo{
+    width: 25vw;
+    img{
+      width: 5vw;
+    }
+    h1{
+      font-size: 2vw;
+    }
+  }
+  nav{
+    ul{
+    font-size: 1.6vw;
+  }
+  }
+  .menu{
+    font-size: 1.6vw;
+  }
+  .barraBusca{
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  header{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+  }
+  .barraBusca{
+    display: none;
+  }
+
+  .boxLogo{
+    width: 40%;
+    h1{
+      font-size: 20px;
+    }
+    img{
+      width: 50px;
+    }
+  }
+
+  .menu{
+    width: 100%;
+    ul{
+      justify-content: space-evenly;
+      font-size: 21px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .boxLogo{
+    width: 50%;
+    h1{
+      font-size: 16px;
+    }
+    img{
+      width: 40px;
+    }
+  }
+
+  .menu{
+    width: 100%;
+    ul{
+      justify-content: space-evenly;
+      font-size: 18px;
+    }
+  }
+}

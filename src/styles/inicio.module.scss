@@ -3,13 +3,12 @@
     height: 74.9vh;
     background-image: url('../assets/images/fundo-section.png');
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding-left: 20vh;
-    @media(min-width:201px) and (max-width: 600px){
-        width: 100%;
-    }
-    p{
+    
+    h2{
         color: white;
         width: 20vw;
         height: 16.9vh;
@@ -59,4 +58,46 @@
        line-height: 26.63px;
        text-align: center;
 }
+}
+
+@media (max-width: 780px) {
+    .fundoInicio{
+        justify-content: center;
+        padding-left: 0;
+        h2{
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+    .container{
+        height: 120vh;
+        .firstBox{
+            justify-content: center;
+            margin-left: 0;
+            h2{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .secondBox{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        article{
+            width: 230px;
+            height: 38vh;
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+        .container{
+            height: 190vh;
+        }
+    }
 }

@@ -9,11 +9,11 @@ export default function Inicio(){
     return(
         <main>
         <section className={s.fundoInicio}>
-        <p>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</p>
+        <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
         </section>
         <section className={s.container}>
         <section className={s.firstBox}>
-            <h1>Por que devo doar?</h1>
+            <h2>Por que devo doar?</h2>
         </section>
         <section className={s.secondBox}>
             <article>
