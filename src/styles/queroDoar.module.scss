@@ -69,3 +69,127 @@
     color: white;
 }
 
+@media (max-width: 900px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 20px;
+        height: 110vh;
+    }
+    .explicativo{
+        width: 500px;
+        height: 10vh;
+        font-size: 22px;
+    }
+    .boxForms{
+        width: 390px;
+        margin-bottom: 0;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .entrada{
+        width: 330px;
+        padding-right: 20px;
+
+        &::placeholder{
+            font-size: 18px;
+        }
+    }
+    .button{
+        width: 120px;
+        height: 7vh;
+        top: 709px;
+        left: 623px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    main{
+        height: 110vh;
+    }
+    .explicativo{
+        width: 400px;
+        height: 10vh;
+        font-size: 22px;
+    }
+    .boxForms{
+        width: 370px;
+        margin-bottom: 0;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .entrada{
+        width: 310px;
+        padding-right: 20px;
+
+        &::placeholder{
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media (max-width: 420px) {
+    main{
+        height: 100vh;
+    }
+    .explicativo{
+        width: 370px;
+        height: 10vh;
+        font-size: 18px;
+    }
+    .boxForms{
+        width: 320px;
+        margin-bottom: 0;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .entrada{
+        width: 260px;
+        padding-right: 20px;
+
+        &::placeholder{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    main{
+        height: 100vh;
+    }
+    .explicativo{
+        width: 340px;
+        height: 10vh;
+        font-size: 18px;
+    }
+    .boxForms{
+        width: 300px;
+        margin-bottom: 0;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .entrada{
+        width: 240px;
+        padding-right: 20px;
+
+        &::placeholder{
+            font-size: 15px;
+        }
+    }
+}
