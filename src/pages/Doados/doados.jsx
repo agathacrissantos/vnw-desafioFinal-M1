@@ -1,9 +1,23 @@
 import protagonista from '../../assets/images/protagonista.png'
-import persuasao from '../../assets/images/persuasao.png'
-import arteDeConquistar from '../../assets/images/artedeconquistar.png'
 import s from '../../styles/doados.module.scss'
+import axios from 'axios'
+import {useState, useEffect} from 'react'
+
 
 export default function Doados(){
+
+    const [livros,setLivros] = useState([])
+
+    const getLIvros = async () => {
+        const response = await axios.get('https://api-livros-vnw-projeto.onrender.com/livros')
+        setLivros(response.data)
+    }
+
+    useEffect(() => {
+        getLIvros()
+    },[])
+
+
     return(
         <section className={s.livrosDoados}>
             <section className={s.titulo}>
@@ -16,20 +30,14 @@ export default function Doados(){
                 <p>Susanne Andrade</p>                
                 <p>Ficção</p>
             </article>
-
-            <article>
-                <img src={persuasao} alt='Imagem do livro Persuasão' />
-                <p>Persuasão - A arte de conseguir o que você quer</p>
-                <p>Dave Lakhani</p>
-                <p>Auto ajuda</p>
-            </article>
-
-            <article>
-                <img src={arteDeConquistar} alt='Imagem do livro A arte de conquistar' />
-                <p>A arte de conquistar o SIM</p>
-                <p>Robert B. Cialdini</p>
-                <p>Saude e bem-estar</p>
-            </article>
+            {livros.map((index,key) => (
+                <article key={key}>
+                    <h3>{index.titulo}</h3>
+                    <p>{index.categoria}</p>
+                    <p>{index.autor}</p>
+                    <img src={index.imagem_url} alt={index.titulo} />
+                </article>
+            ))}
 
             </section>
         </section>
